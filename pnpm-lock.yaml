@@ -1,0 +1,74 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@tsfun/all':
+    specifier: '*'
+    version: 0.0.0
+
+packages:
+
+  /@tsfun/all@0.0.0:
+    resolution: {integrity: sha512-7GViioSi9lQHtDoyvtXp5UGf2erFjv9a6VtF1r7GeXrc6FugxnNFA6mlJYvxsrhd8bJ89wSCKcDtPJstf15sAA==}
+    engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@tsfun/apply': 0.0.0
+      '@tsfun/option': 0.0.0
+      '@tsfun/pipe': 0.0.0
+      '@tsfun/result': 0.0.0
+      '@types/node': 11.15.54
+      tslib: 1.14.1
+    dev: false
+
+  /@tsfun/apply@0.0.0:
+    resolution: {integrity: sha512-kxdxZSt2O16IZqz4DIZytJ04PAhIAbb00sECxUo0ITQcn6ic0V+uC4uV4CzOvSkhF1I+6IfoO5vu3bpdNO3bvQ==}
+    engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@types/node': 11.15.54
+      tslib: 1.14.1
+    dev: false
+
+  /@tsfun/option@0.0.0:
+    resolution: {integrity: sha512-FK7Imxn+XLOWHOFcXpqpl2KSXMvuqrBU68KuJYxq/jwcNqI7jY8XYElJE4k/uS6yQRk04c1BwzVr5bXQVpK1ow==}
+    engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@tsfun/prv-option-result-common': 0.0.0
+      '@types/node': 11.15.54
+      tslib: 1.14.1
+    dev: false
+
+  /@tsfun/pipe@0.0.0:
+    resolution: {integrity: sha512-wg7ncJiy0TVm0iLLJoNckmS3Eq3zjmjXw2FWYxyZ46pyLHZ92f0Jzn3nQCdmjX/AKaML5HbCQGMPIDhP4xCA9w==}
+    engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@types/node': 11.15.54
+      tslib: 1.14.1
+    dev: false
+
+  /@tsfun/prv-option-result-common@0.0.0:
+    resolution: {integrity: sha512-E9ia66cUcg4xsCWn5jhgOC1HfjP08lb/tMYkaanqvgnEgEJE0nUoHJG9omtPbzYLJXnjBUs1Q0CwW/4fYr82lQ==}
+    engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@types/node': 11.15.54
+      tslib: 1.14.1
+    dev: false
+
+  /@tsfun/result@0.0.0:
+    resolution: {integrity: sha512-rqxY4Pk8DLr/qwwlrkkuzDF+iJj9HTsbDMzXCrkDqZyomCPsaRnNfMZyMfvV4OC/b7hnrIWYfdOEiJTuyRYDJw==}
+    engines: {node: '>= 8.9.0'}
+    dependencies:
+      '@tsfun/prv-option-result-common': 0.0.0
+      '@types/node': 11.15.54
+      tslib: 1.14.1
+    dev: false
+
+  /@types/node@11.15.54:
+    resolution: {integrity: sha512-1RWYiq+5UfozGsU6MwJyFX6BtktcT10XRjvcAQmskCtMcW3tPske88lM/nHv7BQG1w9KBXI1zPGuu5PnNCX14g==}
+    dev: false
+
+  /tslib@1.14.1:
+    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
+    dev: false

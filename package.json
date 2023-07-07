@@ -1,0 +1,6 @@
+{
+  "name": "test-pnpm-container",
+  "dependencies": {
+    "@tsfun/all": "*"
+  }
+}
