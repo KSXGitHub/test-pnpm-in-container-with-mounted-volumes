@@ -7,7 +7,7 @@ rm -rf pnpm-store node_modules
 mkdir pnpm-store node_modules
 
 echo 'BUILD THE IMAGE'
-podman build . --tag test-pnpm-container
+podman build . -v "$(pwd)/pnpm-store:/pnpm-store" -v "$(pwd)/node_modules:/app/node_modules" --tag test-pnpm-container:latest
 
 echo 'RUN THE IMAGE'
-podman run -v "$(pwd)/pnpm-store:/pnpm-store" -v "$(pwd)/node_modules:/app/node_modules" -it test-pnpm-container:latest bash -c 'pnpm install && bash -i'
+podman run test-pnpm-container:latest pnpm install

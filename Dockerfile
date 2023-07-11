@@ -1,11 +1,8 @@
-FROM ubuntu:latest
+FROM node:20-slim
 
-RUN apt update -y
-RUN apt install -y curl
-RUN apt install -y nodejs
-RUN curl -fsSL https://get.pnpm.io/install.sh | bash -
-ENV PATH "/root/.local/share/pnpm:${PATH}"
+RUN corepack enable
 VOLUME [ "/pnpm-store", "/app/node_modules" ]
 RUN pnpm config --global set store-dir /pnpm-store
 COPY package.json /app/package.json
 WORKDIR /app
+RUN pnpm install
